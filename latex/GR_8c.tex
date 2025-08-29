@@ -1,0 +1,41 @@
+\hypertarget{GR_8c}{}\doxysection{GR.\+c File Reference}
+\label{GR_8c}\index{GR.c@{GR.c}}
+
+
+Planification multilateral de gare routiere.  
+
+
+
+
+\doxysubsection{Detailed Description}
+Planification multilateral de gare routiere. 
+
+Contexte \+:
+\begin{DoxyItemize}
+\item 5 cooperatives independantes, chacune possede 10 vehicules.
+\item 6 destinations \+: Tamatave, Antsirabe, Majunga, Toliara, Morondava, Isalo.
+\item Maquette ANSI temps réel + saisie de réservations + planification.
+\end{DoxyItemize}
+
+Objectifs \+: 1) Eviter les embouteillages à l\textquotesingle{}entree de la gare (files/quais, acces regule). 2) Convois securises \+: departs groupes, convoi $>$= 4 véhicules (peut être $>$4). 3) Réservations en temps reel depuis le meme executable (interface terminal).
+
+Ce projet planifie les activites des acteurs clients et cooperatives afin de fludifier et faciliter les trafics au sein et autour d\textquotesingle{}une gare routiere a Madagascar
+
+Voici les fonctionnalites \+: \begin{DoxyVerb} clients :
+\end{DoxyVerb}
+ -\/Remplissage des formulaires de voyage (heure , destination , place ...) ~\newline
+ -\/Reservation des tickets en temps reel a distance. -\/feedbacks et notation du service pour but d\textquotesingle{}amelioration des services. \begin{DoxyVerb}Gare :
+\end{DoxyVerb}
+ NIVEAU BILLETERIE -\/Reception et analyse des formulaires envoyes par les clients -\/Proposition des services adaptes a la demande de la clientele -\/Transmission et receptions des reservations vers les cooperatives concerenees -\/Classemments par notation et feedbacks
+
+NIVEAU TRAFIC -\/Creation de convoi de vehicule -\/Planification des departs des convois \+: .Regulation des entrees et sorties des vehicules dans la gare \+: .Calcul des durees du trajet afin de planifier l\textquotesingle{}entree et la sortie dans les autres gares .Pour eviter les bouchons ; alternance du depart et de l\textquotesingle{}arrivee a partir des donnees -\/Communication inter-\/gare ~\newline
+ \begin{DoxyVerb}Cooperative :
+\end{DoxyVerb}
+ -\/Gestion de la repartition des places dans chaque vehicule
+
+\begin{DoxyAuthor}{Author}
+COOP-\/\+ADN 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+29/09/25 
+\end{DoxyDate}
